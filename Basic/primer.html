@@ -104,10 +104,42 @@
 
     <!-- Abreviatura -->
     <abbr title="Hypertext Markup Language">HTML</abbr>
+
+    <!-- Etiqueta especial para mostrar codigo de lenguaje de programacion -->
+    <p>
+        <code>
+        if (a>b){<br>
+            a=5;<br>
+        }
+        </code>
+    </p>
+
+    <!-- Etiqueta para una variable matematica o informatica -->
+    <p>
+        <var>a</var><br>
+        <var>nombre</var>
+    </p>
+
+    <!-- Etiqueta para resaltar el codigo -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores sit <mark>Este fragmento esta marcado</mark> consequatur corrupti, dolorum delectus amet repellat, iusto molestias placeat tempora ex quasi ab, nulla odio itaque dolorem inventore et!
+    </p>
+
+    <!-- Mostrar detalles -->
+    <p>
+        <details>
+            <summary>Muestra la informacion detallada</summary>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nihil temporibus maxime, ex aut nobis molestiae sint corrupti odit saepe dignissimos corporis labore dolorum similique beatae rem, recusandae debitis. Aspernatur!</p>
+        </details>
+    </p>
+
+    <!-- Importante: Enlaces entre paginas externas he internas -->
+    <p><a href="https://google.es" title="Ir a google" target="_blank">Google</a></p>
     
     <!-- Pie de pagina con texto de indice -->
     <footer>
-        <h2>
+        <!-- El atributo tittle se puede escribir en casi toda las etiquetas -->
+        <h2 title="Indice">
             Indice
         </h2>
         <sup>1</sup><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatem? Ab dolor culpa autem, id vero et, rerum saepe dolore minima neque corrupti est consequatur temporibus? Natus iste eaque quaerat!</small>
