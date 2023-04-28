@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- Titulos HTML -->
-   <h1>1 Mi nombre es Diego y esta es mi primera pagina web</h1>
+   <h1 id="elementoH1">El grande he</h1>
    <h2>2 Mas pequeño</h2>
    <h3>3 Mas pequeñito</h3>
    <h4>4 Mas pequeñiñito</h4>
@@ -133,8 +133,24 @@
         </details>
     </p>
 
-    <!-- Importante: Enlaces entre paginas externas he internas -->
+    <!-- Los link importables en las paginas web 
+
+        1- Me crean enlaces externos (a otra url, si la url es externa:https://google.es)
+        2- Puedes crear enlaces internos en el mismo proyecto, por eje: del index.html enlazar con contacto.html
+        3- Puedo crear enlaces en las mismas paginas. Ejem del pie de pagina enlazar co el header 
+    -->
+
+    <!-- Ej 1. Enlaces a páginas externas - lo recomendable es usar la url completa -->
     <p><a href="https://google.es" title="Ir a google" target="_blank">Google</a></p>
+    <!-- Ej2. Enlaces internos, -->
+    <p><a href="segundo.html" title="Ir a segundo html" target="_blank">Segundo.html</a></p>
+    <!-- Ej3. Crear enlaces en la misma pagina, utilizando como atributo de llamada el id -->
+    <p><a href="#elementoH1" title="Ir a H1">Ir al H1</a></p>
+    <!-- Tipo camel: elementoH1 encabezadoPaginaPrimera -->
+
+
+
+
     
     <!-- Pie de pagina con texto de indice -->
     <footer>
