@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Diego Zaballos">
+    <meta name="keyword" content="sitio web, diseño, html, css, javascript">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Actividad 4</title>
+    <style>
+        
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+
+        .s,h1,table{
+            margin: auto;
+            text-align: center;
+
+            
+        }
+        caption,table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="Encabezado" class="s">
+        <h1 >Actividad 4: Crear una pagina</h1>
+        <p  >Crear una página con:</p>
+        <p > 1 Ecabezado <br>
+            3 Párrafos  <br>
+            2 Enlaces Externos: Noticias-> abc   y elpais <br>
+            2 Enlaces internos -> Encabezado y al primer párrafo <br>
+            1 Tabla de  5 x 5 <br>
+            1  Details  con una noticia relevant
+        </p>
+    </header>
+
+    <p id="PrimerParrafo"><h3 class="s">Enlaces Externos</h3></p>
+    <p class="s">
+        <a href="https://www.abc.es/" title="ABC" target="_blank">ABC</a>
+        <a href="https://elpais.com/" title="elPais" target="_blank">Pais</a>
+    </p>
+
+    <p>
+        <table>
+            <caption>TABLA 5X5</caption>
+            <tr>
+                <th>Blanco</th>
+                <th>HOLA</th>
+                <th>HOLA</th>
+                <th>HOLA</th>
+                <th>HOLA</th>
+            </tr>
+            <tr>
+                <th>HOLA</th>
+                <td>X</td>
+                <td>-</td>
+                <td>O</td>
+                <td>Adios</td>
+            </tr>
+            <tr>
+                <th>HOLA</th>
+                <td>-</td>
+                <td>X</td>
+                <td>O</td>
+                <td>Adios</td>
+            </tr>
+            <tr>
+                <th>HOLA</th>
+                <td>X</td>
+                <td>O</td>
+                <td>X</td>
+                <td>Adios</td>
+            </tr>
+            <tr>
+                <th>HOLA</th>
+                <td>Adios</td>
+                <td>Adios</td>
+                <td>Adios</td>
+                <td>Sayonara</td>
+            </tr>
+        </table>
+    </p>
+    <p >
+        <details class="s">
+         <summary>NOTICIA ESPECTACULAR INCREIBLE NUNCA VISTO PINCHE PINCHE <b>DESPLIEGUE DESPLIEGUE</b>. ES GRATIS NO COBRAMOS. EL CLICK A 0.0000000002 CENT BARATO BARATO</summary>
+
+            <span class="material-symbols-outlined">sunny</span>
+            <a href="https://elpais.com/espana/2023-04-27/en-el-epicentro-de-la-sequia-en-espana-asi-sobrevive-tomelloso-a-134-dias-sin-lluvia.html?rel=buscador_noticias" title="TOMELLOSO EN SEQUIA" target="_blank">TOMELLOSO 134 Dias sin lluvia</a>
+            <span class="material-symbols-outlined">sunny</span>
+
+        </details>
+    </p>
+
+    <p><h3 class="s">Enlaces Internos</h3></p>
+    <p class="s">
+        <a href="#Encabezado">Encabezado</a>
+        <a href="#PrimerParrafo">PrimerParrafo</a>
+    </p>
+</body>
+</html>

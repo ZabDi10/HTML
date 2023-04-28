@@ -8,32 +8,151 @@
     <meta name="keyword" content="sitio web, diseño, html, css, javascript">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Document</title>
+
+    <style>
+        h2{
+            margin: auto;
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Clase para crear tablas</h2>
+    <h2>TABLA CON UN ENCABEZADO, UNO HORIZONTAL</h2>
 
-    
-    <!--definir la tabla con la etiqueta <table>         </table>  -->
+    <!--definir la tabla con la etiqueta <table>  </table>  -->
     <table>
+        <tr>
+            <!-- Table Header -->
+            
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+        </tr>
         <tr> 
-            <!-- La fila td -->
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-
-
-
+            <!-- Table Data -->
+            
+            <td>Marta</td>
+            <td>Sánchez</td>
+            <td>03658984H</td>
+        </tr>
+        <tr>
+            
+            <td>Jose</td>
+            <td>Garcia</td>
+            <td>58698745G</td>
         </tr>
 
+        <caption>Tabla Sencilla</caption>
 
+    </table>
+    
+    <h2>TABLA CON DOBLE ENCABEZADO, UNO HORIZONTAL Y OTRO VERTICAL</h2>
+    <!--definir la tabla con la etiqueta <table>  </table>  -->
+    <table>
+        <tr>
+            <!-- Table Header -->
+            <th></th>
+            <th>Invierno</th>
+            <th>Primavera</th>
+            <th>Verano</th>
+            <th>Otoño</th>
+        </tr>
+        <tr> 
+            <!-- Table Data -->
+            <th>1 Mes</th>
+            <td>Noviembre</td>
+            <td>Febrero</td>
+            <td>Junio</td>
+            <td>Septiembre</td>
+        </tr>
+        <tr>
+            <th>2 Mes</th>
+            <td>Diciembre</td>
+            <td>Marzo</td>
+            <td>Julio</td>
+            <td>Octubre</td>
+        </tr>
+        <tr>
+            <th>3 Mes</th>
+            <td>Enero</td>
+            <td>Abril-Mayo</td>
+            <td>Agosto</td>
+            <td>Noviembre</td>
+        </tr>
 
+        <caption>listado de Meses y Estaciones</caption>
 
+    </table>
 
-
-
+    <h2>TABLA</h2>
+    <!-- table>tr*3>td*4 -->
+    <table>
+        <caption>Tabla con rowspan</caption>
+        <tr>
+            <th></th>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <th></th>
+            <td>852</td>
+            <td>598</td>
+            <td>652</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>546</td>
+            <!-- Rowspan junta verticalmente de una columna -->
+            <td rowspan="2">548</td>
+            <td>652</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>452</td>
+            <td>456</td>
+        </tr>
+    </table>
+    <h2>TABLA</h2>
+    <!-- table>tr*3>td*4 -->
+    <table>
+        <caption>Tabla con colspan</caption>
+        <tr>
+            <th></th>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <th></th>
+            <td>852</td>
+            <td>598</td>
+            <td>652</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>546</td>
+            <!-- Rowspan junta verticalmente de una columna -->
+            <td colspan="2">548</td>
+            
+        </tr>
+        <tr>
+            <th></th>
+            <td>852</td>
+            <td>452</td>
+            <td>456</td>
+        </tr>
     </table>
     
     
