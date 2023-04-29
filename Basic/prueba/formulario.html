@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        form{
+            display: block;
+            margin-top: 5%;
+
+        }
+        input{
+            padding: 3px;
+            width: 200px;
+            
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario</h1>
@@ -15,7 +27,7 @@
     4. entype para indicar que tipo de archivos se envia desde el formulario. Ej: enctype="multipart/form-data"-->
     
 
-    <form action="primer.html" method="get">
+    <form action="primer.html" method="get" enctype="multipart/form-data">
         <!-- entrada de datos
         1. etiqueta <input> : text, number, tel, email, password, file, submit, range, 
         2. label : Etiqueta para indicar el nombre del input que se muestra
@@ -38,14 +50,33 @@
         <!-- en el pattern los [] es lo que se puede poner y {} es la cantidad de digitos a poner -->
         
         <label for="sueldo">Sueldo</label>
-        <input type="number" name="sueldo" id="sueldo" max="30000" min="500" autocomplete="off">
+        <input type="number" name="sueldo" id="sueldo" max="30000" min="500" autocomplete="off" placeholder="500">
 
         <input type="range" min="500" max="2000" name="sueldo2" id="sueldo2">
         <br><br>
         <!-- En ocasiones no utilizamos la etiqueta label sino que indicamos al usuario que estamos solicitando  -->
         <input type="email" name="email" id="email" required placeholder="Indica tu email">
+        <br><br>
 
-        <input type="submit" value="Enviar Formulario">
+        <!-- Insertar un archivo, importante el atributo accept -->
+        <label for="archivo">Inserta tu CV</label>
+        <input type="file" id="archivo" name="archivo"  accept="image/png, image/webp, .pdf,.docx">
+        
+        <!-- Agrupar diferentes etiquetas y mostarlas en bloques  fieldset abre el grupo
+        el legend indica un titulo del grupo (no obligatorio)-->
+        <fieldset>
+            <legend>Datos Academicos</legend>
+            <input type="text" placeholder="Titulación" name="titulacion" id="titulacion">
+
+            <label for="fechaT">Fecha titulación</label>
+            <input type="date" name="fechaT" id="fechaT">
+
+            <input type="text" placeholder="Institución" name="institucion" id="institucion">
+        </fieldset>
+
+        
+        <br><br>
+        <input type="submit" value="Enviar Formulario" >
 
         
 
