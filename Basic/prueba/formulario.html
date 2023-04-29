@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <!-- Atributos de la etiqueta form 
+    1. action -> indica que hacer o donde se va a dirigir cuando se envíe -> a otra página html, a una aplicación en php o java etc... 
+    2. method -> como se va a enviar ese formulario al action. Existen dos métodos: POST o el GET 
+    3. id, name son para identificar el formulario
+    4. entype para indicar que tipo de archivos se envia desde el formulario. Ej: enctype="multipart/form-data"-->
+    
+
+    <form action="primer.html" method="get">
+        <!-- entrada de datos
+        1. etiqueta <input> : text, number, tel, email, password, file, submit, range, 
+        2. label : Etiqueta para indicar el nombre del input que se muestra
+        3. placeholder atributo del input que muestra un texto de ayuda
+        4. maxlenght/minlenght : indica la longitud máxima/mínima que podra escribir el usuario 
+        5. requiered : Indica que es obligatorio escribir ese campo para poder enviar el formulario
+        6. pattern : Solo permite este patrón de entrada de datos. Ej- nombre:[a-zA-ZÑñ ]
+        7. value : Indica el valor inicial del input
+        8. Atributo importante : autocomplete : permite el que el navegador autocomplete los datos-->
+        
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="el nombre alelao" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñ]+" autocomplete="on">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellido" id="apellido" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñ]+" placeholder="Apellidito" autocomplete="on">
+        <br><br>
+        
+        <label for="Phone">Telefono</label>
+        <input type="tel" name="Phone" id="Phone" placeholder="000000000" required pattern="[6789]{1}[0-9]{8}" maxlength="9" autocomplete="on">
+        <!-- en el pattern los [] es lo que se puede poner y {} es la cantidad de digitos a poner -->
+        
+        <label for="sueldo">Sueldo</label>
+        <input type="number" name="sueldo" id="sueldo" max="30000" min="500" autocomplete="off">
+
+        <input type="range" min="500" max="2000" name="sueldo2" id="sueldo2">
+        <br><br>
+        <!-- En ocasiones no utilizamos la etiqueta label sino que indicamos al usuario que estamos solicitando  -->
+        <input type="email" name="email" id="email" required placeholder="Indica tu email">
+
+        <input type="submit" value="Enviar Formulario">
+
+        
+
+
+    </form>
+</body>
+</html>
