@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        h1,div{
+            text-align: center;
+        }
+        img{
+           width: 30%;
+           height: 297px;
+           border: 1px solid lightgreen;
+           
+        }
+        #bloque1{
+            padding: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagenes en HTML</h1>
+     <!--Atributos de las imagens
+    alt: texto identificativo para cuando no es encuentra la imagen y para la accesibilidad
+    width: ancho de la imagen
+    height: alto de la imagen-->
+    <div id="bloque1">
+        <img  src="img/agujero-negro.webp"  alt="agujero negro" height="">
+        <img src="img/galaxy.jpg" alt="Galaxia">
+    </div>
+    <div id="bloque1">
+        <p>Bloque para separar las imagenes</p>
+        <img src="img/space.jpg" alt="Espacio">
+    </div>
+    <div id="bloque1">
+        <figure>
+            <img src="img/space_ship.webp" alt="Nave espacial"><img src="img/wormhole.webp" alt="Agujero de gusano"><img src="img/galaxy.jpg" alt="Galaxia">
+            <figcaption>Imagenes del espacio</figcaption>
+        </figure>
+    </div>
+
+
+
+
+
+</body>
+</html>
