@@ -111,6 +111,8 @@
             Value: valor que se envia con el formulario, no es obligatorio.
             Selected: que esta preseleccionado -->
             <select name="horarios" id="horarios">
+                <option value="" selected></option> 
+                <!-- Vacio para que se ponga automatico -->
                 <option value="mañana">Mañana</option>
                 <option value="mediodia">Mediodia</option>
                 <option value="tarde">Tarde</option>
@@ -119,11 +121,44 @@
             <!-- Cuando se necesita que pueda seleccionar varias opciones, se debe indicar al select el atributo multiple, se podran seleccionar varias opciones -->
             <label for="dispositivo">Dispositivo de conexión</label>
                 <select name="dispositivo" id="dispositivo" multiple>
-                    <option value="movil" selected>Móvil</option>
+                    <option value="" selected></option>
+                    <option value="movil" >Móvil</option>
                     <option value="tablet">Tablet</option>
                     <option value="pc">Ordenador</option>
                     <option value="television">Smart TV</option>
                 </select>
+            <!-- Las casillas de selección múltiple -> En las interfaces de las aplicaciones y en los formularios, las casillas de seleccion se utilizarán para tener una seleccion múltiple. De nuevo, es necesario utilizar el elemento <input> con type="checkbox" -->
+            <p>Jornadas a seleccionar</p>
+            <label for="morning">Mañana</label>
+            <input type="checkbox" name="jornada" id="jornada" value="Mañana">
+            <label for="tarde">Tarde</label>
+            <input type="checkbox" name="tarde" id="tarde" value="tarde">
+            <label for="indiferente">Indiferente</label>
+            <input type="checkbox" name="indiferente" id="indiferente" value="indiferente">
+            <label for="teletrabajo">Teletrabajo</label>
+            <input type="checkbox" name="teletrabajo" id="teletrabajo" value="teletrabajo">
+            <!-- Si se pone el mismo name hara lo mismo que radio  -->
+
+            <!-- Para seleccionar colores, podemos utilizar un input type="color" -->
+            <label for="color">Seleccione su color favorito</label>
+            <input type="color" name="color" id="color">
+
+            <!-- input para entrada url -->
+            <label for="tuWeb">Página Web Personal</label>
+            <input type="url" name="tuWeb" id="tuWeb">
+
+            <!-- Etiqueta de mes, semana, horas, dias-mes-año -->
+            <label for="mes">Seleccione un mes</label>
+            <input type="month" name="mes" id="mes">
+            <br>
+            <p>Etiquetas de tiempo</p>
+            <label for="hora">Horas</label>
+            <input type="time" name="hora" id="hora">
+            <label for="fechaYhora">Fecha y Hora</label>
+            <input type="datetime-local" name="fechaYhora" id="fechaYhora">
+            <label for="week">Semana</label>
+            <input type="week" name="week" id="week">
+                
 
         </fieldset>
 
