@@ -72,12 +72,68 @@
             <input type="date" name="fechaT" id="fechaT">
 
             <input type="text" placeholder="Institución" name="institucion" id="institucion">
+            <!-- Practica no recomendada -->
+            <p>Nivel de conocimiento</p>
+            <!-- El atributo disable desactiva el campo y, por tanto, los visitantes ya no lo pueden utilizar. -->
+            <input type="text" disabled>
+            <!-- readonly  es solo lectura -->
+            <input type="text" value="17:09 h" readonly>
+            <!-- Hidden aparece oculto -->
+            <input type="text" value="5000" hidden>
+
+            <!-- Crear mensajes, comentarios o textos extensos -->
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
+
+            <!-- Elementos de grupo RadioBotton Si ponemos el mismo name solo seleccionara un solo circulo, si poseen diferentes nombres se podrá seleccionar los dos circulos. Con Checked tendra un input preseleccionado de antes -->
+            <br>
+            <label for="nivelInglés">Seleccione el nivel de Inglés</label>
+            <br>
+            Básico <input type="radio" name="nivelInglés" value="basico" checked>
+            Intermedio <input type="radio" name="nivelInglés" id="Intermedio">
+            Avanzado <input type="radio" name="nivelInglés" id="Avanzado">
         </fieldset>
+        <br>
+        <fieldset>
+            <label for="username">Nombre de usuario</label>
+            <input type="text" name="username" id="username">
+
+            <!-- Tipo de input type password para ocultar las contraseñas -->
+            <br>
+            <label for="password">Indica tu contraseña</label>
+            <input type="password" id="password" name="password" max="10" minlength="8" maxlength="10">
+            <br>
+            <label for="password">Repite tu constraseña tu contraseña</label>
+            <input type="password" id="password" name="password" max="10" minlength="8">
+            <label for="horarios">Horario de conexion</label>
+            <!-- <select> Etiqueta que nos permite crear una lista desplegrable con opciones unida a una etiqueta por opcion <option>
+            Atributos:
+            Value: valor que se envia con el formulario, no es obligatorio.
+            Selected: que esta preseleccionado -->
+            <select name="horarios" id="horarios">
+                <option value="mañana">Mañana</option>
+                <option value="mediodia">Mediodia</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select>
+            <!-- Cuando se necesita que pueda seleccionar varias opciones, se debe indicar al select el atributo multiple, se podran seleccionar varias opciones -->
+            <label for="dispositivo">Dispositivo de conexión</label>
+                <select name="dispositivo" id="dispositivo" multiple>
+                    <option value="movil" selected>Móvil</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="pc">Ordenador</option>
+                    <option value="television">Smart TV</option>
+                </select>
+
+        </fieldset>
+
+
 
         
         <br><br>
         <input type="submit" value="Enviar Formulario" >
-
+        <input type="reset" value="Limpiar formulario">
+        
         
 
 
