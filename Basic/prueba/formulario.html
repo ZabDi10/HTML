@@ -42,7 +42,7 @@
         <input type="text" name="nombre" id="nombre" placeholder="el nombre alelao" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñ]+" autocomplete="on">
 
         <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellido" id="apellido" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñ]+" placeholder="Apellidito" autocomplete="on">
+        <input type="text" name="apellido" id="apellido" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñ ]+" placeholder="Apellidito" autocomplete="on">
         <br><br>
         
         <label for="Phone">Telefono</label>
@@ -85,13 +85,13 @@
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
 
-            <!-- Elementos de grupo RadioBotton Si ponemos el mismo name solo seleccionara un solo circulo, si poseen diferentes nombres se podrá seleccionar los dos circulos. Con Checked tendra un input preseleccionado de antes -->
+            <!-- Elementos de grupo RadioBotton Si ponemos el mismo name solo seleccionara un solo circulo, si poseen diferentes nombres se podrá seleccionar los dos circulos. Con Checked tendra un input preseleccionado de antes el id tiene que ser diferente-->
             <br>
             <label for="nivelInglés">Seleccione el nivel de Inglés</label>
             <br>
             Básico <input type="radio" name="nivelInglés" value="basico" checked>
-            Intermedio <input type="radio" name="nivelInglés" id="Intermedio">
-            Avanzado <input type="radio" name="nivelInglés" id="Avanzado">
+            Intermedio <input type="radio" name="nivelInglés" value="Intermedio">
+            Avanzado <input type="radio" name="nivelInglés" value="Avanzado">
         </fieldset>
         <br>
         <fieldset>
@@ -137,7 +137,7 @@
             <input type="checkbox" name="indiferente" id="indiferente" value="indiferente">
             <label for="teletrabajo">Teletrabajo</label>
             <input type="checkbox" name="teletrabajo" id="teletrabajo" value="teletrabajo">
-            <!-- Si se pone el mismo name hara lo mismo que radio  -->
+            
 
             <!-- Para seleccionar colores, podemos utilizar un input type="color" -->
             <label for="color">Seleccione su color favorito</label>
