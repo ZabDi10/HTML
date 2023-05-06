@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class{
+            /* selector de clase */
+        }
+        #id{
+            /* selector de id */
+        }
+        h6{
+            /* Selector tipo etiqueta cuidado se aplica a todo */
+        }
+    </style>
+</head>
+<body>
+    <h1>Videos en HTML</h1>
+    <!-- Vídeo directamente del local
+    Atributos: autoplay, controls, preload, 
+        metadata ( especifica al navegador que es necesrio descargar los metadatos del video para tener la informacion tecnica, dimension duracion etc), 
+        none (no precarga el archivo del video) 
+        width, height, loop, muted, poster (la miniatura)
+        Observación: Los navegadores no autoreproducen el video al menos que le indiques que es muted, o esta desactivado el sonido.
+     -->
+     <video src="img/Dante vs Vergil Battle 2 DMC3 REMAKE.mp4"  width="560" controls ></video>
+     <!-- Elije de mp4 o webm lo que mejor soporte el navegador -->
+     <video  width="560" controls poster="img/wormhole.webp"> 
+        <source src="img/Dante vs Vergil Battle 2 DMC3 REMAKE.mp4"></source> 
+    </video>
+     <br><br>
+
+    <!-- Video con iframe -->
+    <h3>Video con Iframe: inserta un elemento en la página</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d3G5EaihIK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Archivo de audio -->
+    <h3>Archivo de audio</h3>
+    <audio src="img/The-BEST-NieR-AutomataMusicPianoMedley-WeightoftheWorld-Vague-Hope-City-Ruins.mp3" controls></audio>
+</body>
+</html>
