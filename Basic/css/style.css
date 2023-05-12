@@ -1,0 +1,54 @@
+/* selector {declaracion} */
+/* Selector universal marca a todas las etiquetas es con *{} */
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+body{
+    background-image: url("../img/outer-space.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.my-header{
+    color: rgb(170, 21, 21);
+}
+p{
+    text-transform: uppercase;
+}
+.izquierda{
+    text-align: left;
+    color: brown;
+    }
+.texto-centrado{
+    text-align: center;
+}
+.bloque-centrado{
+
+    /* Borde tiene 3 propiedades: ancho, forma, color */
+    border-right: 2px inset rgb(225, 0, 255);
+    border-left: 2px groove green;
+    border-top: 2px ridge blue;
+    border-bottom: 2px solid yellow;
+    background-color: rgb(182, 0, 0);
+    border-radius: 200px 200px 200px 200px  ;
+}
+.bloque-centrado-sborde{
+    /* Para centrar un bloque horizontalmente  div header footer section*/
+    margin: auto;width: 75%;  
+}
+.parrafo-borde-izquierdo{
+    border-left: 8px solid rgb(134, 0, 0);
+    background-color: rgb(217, 255, 0);
+}
+.bloque-opaco{
+    background-color: rgb(0, 255, 0) ;
+    opacity: 0.5;
+}
+.bloque{
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/kawii-cat.gif");
+    background-size: cover;
+    border: 2px solid black;
+    margin: auto;
+}
