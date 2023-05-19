@@ -1,0 +1,79 @@
+.contenedor {
+  width: 60%;
+  margin: auto;
+}
+.tituloP {
+  color: dark;
+  background-color: darkgray;
+  text-align: center;
+}
+/* Justifica el parrafo pero la ultima linea esta justificada a la derecha */
+.parrafo1 {
+  text-align: justify;
+  text-align-last: right;
+}
+/* Escribe de derecha a izq */
+.loca {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+/* Alineacion vetical */
+.img1 {
+  vertical-align: baseline;
+}
+.img2 {
+  vertical-align: text-top;
+}
+.img3 {
+  vertical-align: text-bottom;
+}
+.img4 {
+  vertical-align: sub;
+}
+.img5 {
+  vertical-align: super;
+}
+.p1 {
+  text-decoration: overline; /* Linea arriba */
+  text-decoration-color: darkblue;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 5px;
+}
+.p2 {
+  text-decoration: line-through; /* Linea media */
+}
+.p3 {
+  text-decoration: underline darkgoldenrod wavy 2px; /* Linea abajo */
+}
+.p4 {
+  text-decoration: overline underline; /* Linea arriba y abajo */
+}
+/* Eliminar la decoracion implicita que tiene los enlaces */
+.eliminar {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 10px 0px;
+  color: black;
+}
+/* Trannsformacion del text. Espaciado del texto. Sombra de texto */
+.t1 {
+  text-transform: uppercase; /* Mayuscula */
+  text-indent: 50px; /* Tabula  */
+}
+.t2 {
+  text-transform: lowercase; /* Minuscula */
+  letter-spacing: 5px; /* Deja un espacio entre letras */
+  text-shadow: 0 0 3px red, 0 0 5px blue;
+}
+.t3 {
+  text-transform: capitalize; /* Primera mayus resto minus */
+  line-height: 4; /* Altura de la linea, deja un espacio arriba y abajo,  en medidas de 0 a x sin unidad*/
+  text-shadow: 0 0 3px red;
+}
+.t4 {
+  font-variant: small-caps; /* versalitas */
+  word-spacing: 10px; /* Espacio entre palabras*/
+  text-shadow: 2px 2px red; /* Desenfoque, el ultimo es lo profundo que se ve, un valor de 0 se ve todo*/
+  color: blue;
+}

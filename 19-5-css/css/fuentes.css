@@ -1,0 +1,65 @@
+section {
+  width: 70%;
+  margin: auto;
+}
+.t1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.p1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+.frase {
+  font-style: oblique; /*Cursiva mas fuerte*/
+  font-weight: bold; /* Fuerza o peso de la fuente*/
+  font-size: x-large;
+}
+.frase2 {
+  font-weight: 700;
+  font-size: x-large;
+  font-family: "Dancing Script", cursive;
+}
+.icono1 {
+  color: red;
+  font-size: 25px;
+  text-shadow: 2px 2px 5px black;
+}
+.icono2 {
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 5px black;
+}
+.icono3 {
+  color: black;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 30px;
+  font-size: 15px;
+}
+/* Si queremos que estn solos los border en a */
+.menu {
+  list-style: none;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(204, 25, 25);
+  border-radius: 20px;
+  padding: 30px;
+}
+.menu li {
+  margin: auto;
+}
+/* Seudoclases: muestran un efecto cuando pasas por encima */
+a:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline wavy;
+}
+.menuP {
+  background-color: lightgray;
+}
