@@ -1,0 +1,11 @@
+.rojo{
+color: red;
+border: 1px solid black;
+background-color: rgb(128, 11, 11);
+}
+.rojo2{
+color: rgb(224, 101, 101);
+}
+body{
+    background-color: rgb(58, 3, 3);
+}
