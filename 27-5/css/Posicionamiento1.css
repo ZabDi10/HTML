@@ -1,0 +1,31 @@
+body{
+    background: gray url("../cat-cat-jumping.gif") no-repeat fixed center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.izquierda, .derecha{
+    width: 200px;
+    background-color: darkgray;
+    padding: 10px;
+}
+.izquierda{
+    
+    float: left;
+    margin-left: 50px;
+}
+.derecha{
+    float: right;
+    margin-right: 50px;
+}
+header h1, header p, header h2{
+    text-align: center;
+}
+.normal{
+    clear: both;
+    width: 80%;
+    margin: 50px auto;
+    background-color: darkgray;
+
+}
+.normal p{
+    padding: 10px;
+}

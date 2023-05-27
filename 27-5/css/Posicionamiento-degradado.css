@@ -1,0 +1,26 @@
+div{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    background-color: white;
+    float: left;
+}
+#caja1{
+    background-image: linear-gradient(yellow, green);
+    border: 1px solid yellow;
+}
+#caja2{
+    background-image: linear-gradient(to right, red,blue);
+}
+#caja3{
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 255),rgb(255, 0, 221));
+}
+#caja4{
+    background-image: linear-gradient(to bottom left, rgb(0, 255, 255),rgb(255, 0, 221), rgb(255, 0, 85));
+}
+#caja5{
+    background-image: radial-gradient(rgb(0, 0, 0),rgb(0, 0, 0),rgb(255, 0, 0),rgb(255, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+#caja6{
+    background-image: linear-gradient(rgb(255, 0, 0),orange, rgb(255, 255, 0),rgb(94, 255, 0), blue, rgb(195, 0, 255));
+}

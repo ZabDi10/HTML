@@ -1,0 +1,90 @@
+/* Indicar un estilo pasando la posicion de la lista */
+/* .lista:nth-child(n) */
+.contenedor{
+    
+    width: 50%;
+    margin: auto;
+    border: 1px dotted gray;
+}
+ul{
+    border: 1px dotted gray;
+    margin: 25px;
+    width: 25% auto;
+    padding: 25px;
+} 
+.lista1 li:nth-child(2){
+    background-color: darkblue;
+    color: aliceblue;
+}
+.lista2 li:nth-child(3){
+    background-color: darkred;
+    list-style: circle;
+    color: aqua;
+}
+.lista2{
+    list-style: square;
+    color: goldenrod;
+}
+.lista3{
+    list-style: square inside url("../check_circle_FILL0_wght400_GRAD0_opsz48.png");
+    
+}
+.lista4 li:nth-child(4){
+    list-style: outside url("../check_circle_FILL0_wght400_GRAD0_opsz48.png");
+}
+.tabla, .tabla3{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid darkorchid;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.tabla td, .tabla th, .tabla3 th, .tabla3 td{
+    border: 1px solid rgb(244, 61, 255);
+    padding: 10px;
+}
+.tabla th{
+    background-color: rgb(244, 61, 255);
+    padding: 12px 0;
+    text-align: center;
+    color: white;
+    
+}
+.tabla tr:nth-child(even){ /* A las pares es even - Par / odd - Impar*/
+    background-color: rgb(23, 85, 205);
+}
+.tabla tr:nth-child(odd){ /* A las pares es even - Par / odd - Impar*/
+    background-color: lightgray;
+}
+.tabla tr:hover{
+    background-color: black;
+    color: white;
+}
+.tabla3{
+    background-image: linear-gradient(to right, #25C1FD,#2FD2FB, #25B5FE, #0B83FF, #1755CD, #263892, #222A7A, #1D124C, #21083F, #23063E, #27053A, #2D033D, #3C0045, #56005B, #6B006D, #B312B7, #E432EE, #F73DFF, #FF73FF, #FE7BFF, #FD71FD  );
+    border: 2px solid black;
+    
+}
+.tabla3 th, .tabla3 td{
+    border: 1px solid black;
+}
+.tabla4{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 3px #ccc;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tabla4 td{
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    border-collapse: collapse;
+
+}
+.tabla4 th{
+    padding: 15px 0;
+}
